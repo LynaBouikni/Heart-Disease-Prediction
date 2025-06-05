@@ -12,12 +12,12 @@ The dataset used comes from the **Cleveland Heart Disease dataset**, made access
 
 ## 📌 Objectives
 
-- 🧪 Understand the heart disease dataset through visual and statistical EDA.
-- 🤖 Build and compare multiple classification models.
-- 🎯 Optimize models using hyperparameter tuning.
-- 📈 Evaluate models using metrics beyond accuracy (precision, recall, F1, AUC).
-- 🧩 Interpret model decisions through feature importance.
-- ✅ Apply reproducible and ethical data science practices.
+- Understand the heart disease dataset through visual and statistical EDA.
+- Build and compare multiple classification models.
+- Optimize models using hyperparameter tuning.
+- Evaluate models using metrics beyond accuracy (precision, recall, F1, AUC).
+- Interpret model decisions through feature importance.
+- Apply reproducible and ethical data science practices.
 
 ---
 
