@@ -6,7 +6,7 @@
 
 This project is an end-to-end machine learning pipeline designed to predict the presence of heart disease in patients based on clinical attributes. It's built for binary classification and implements essential data science workflows, from exploratory data analysis (EDA) to model tuning and evaluation.
 
-The dataset used comes from the **Cleveland Heart Disease dataset**, made accessible via [Kaggle](https://www.kaggle.com/datasets) and originally from the UCI Machine Learning Repository [UCI Machine Learning Repository](https://archive.ics.uci.edu/).
+The dataset used comes from the **Cleveland Heart Disease dataset**, made accessible via [Kaggle](https://www.kaggle.com/datasets) and originally from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/).
 
 ---
 
