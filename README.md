@@ -96,13 +96,14 @@ git clone https://github.com/<your-username>/heart-disease-prediction.git
 cd heart-disease-prediction
 pip install -r requirements.txt
 jupyter notebook
+```
 
-🤝 Acknowledgements
+## 🤝 Acknowledgements
 UCI Machine Learning Repository – Heart Disease Dataset
 
 Zero to Mastery – Machine Learning Course by Daniel Bourke
 
-📬 Contact
+## 📬 Contact
 Lyna Bouikni
 * Junior Data Scientist | AI & Neuroscience
 * lynabouiknia@gmail.com
