@@ -97,6 +97,11 @@ cd heart-disease-prediction
 pip install -r requirements.txt
 jupyter notebook
 
+🤝 Acknowledgements
+UCI Machine Learning Repository – Heart Disease Dataset
+
+Zero to Mastery – Machine Learning Course by Daniel Bourke
+
 📬 Contact
 Lyna Bouikni
 * Junior Data Scientist | AI & Neuroscience
