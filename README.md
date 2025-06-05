@@ -21,7 +21,7 @@ The dataset used comes from the **Cleveland Heart Disease dataset**, made access
 
 ---
 
-##   Project Structure
+##  📁 Project Structure
 
 heart-disease-prediction/
 ├── data/ # Dataset (link to Kaggle API)
