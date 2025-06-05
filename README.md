@@ -23,4 +23,82 @@ The dataset used comes from the **Cleveland Heart Disease dataset**, made access
 
 ##   Project Structure
 
+heart-disease-prediction/
+├── data/ # Dataset (link to Kaggle API)
+├── notebook.ipynb # Full end-to-end Jupyter notebook
+├── images/ # Visuals used in README
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation (this file)
 
+---
+
+## 🧬 Dataset
+
+The dataset includes 303 samples and 14 features:
+
+| Feature     | Description                                              |
+|-------------|----------------------------------------------------------|
+| `age`       | Age in years                                             |
+| `sex`       | (1 = male; 0 = female)                                   |
+| `cp`        | Chest pain type (0–3)                                    |
+| `trestbps`  | Resting blood pressure                                   |
+| `chol`      | Serum cholesterol (mg/dl)                                |
+| `fbs`       | Fasting blood sugar > 120 mg/dl                          |
+| `restecg`   | Resting electrocardiographic results                     |
+| `thalach`   | Max heart rate achieved                                  |
+| `exang`     | Exercise-induced angina                                  |
+| `oldpeak`   | ST depression induced by exercise                        |
+| `slope`     | Slope of the ST segment                                  |
+| `ca`        | Number of major vessels (0–3) colored by fluoroscopy     |
+| `thal`      | Thalium stress result (normal/fixed/reversible defect)   |
+| `target`    | Heart disease present (1) or not (0)                     |
+
+---
+
+## 🔁 ML Workflow
+
+| Step | Description |
+|------|-------------|
+| 1️⃣ Problem Definition       | Predict presence of heart disease (binary classification) |
+| 2️⃣ Data Exploration (EDA)  | Understand the data structure and relationships            |
+| 3️⃣ Model Building          | Logistic Regression, KNN, Random Forest                    |
+| 4️⃣ Model Evaluation        | Confusion Matrix, ROC AUC, Precision, Recall, F1           |
+| 5️⃣ Hyperparameter Tuning   | RandomizedSearchCV, GridSearchCV                           |
+| 6️⃣ Insights & Reporting    | Feature importance, cross-validated metrics                |
+
+---
+
+## ⚙️ Tech Stack
+
+- Python 3.11+
+- pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-Learn
+- Jupyter Notebook
+
+---
+
+## 📊 Results
+
+- **Best model**: Logistic Regression (tuned)
+- **Accuracy**: ~85% (cross-validated)
+- **Precision**: ~82%
+- **Recall**: ~93%
+- **F1-score**: ~87%
+- **ROC AUC**: > 0.90
+
+---
+
+## 📁 How to Run
+
+```bash
+git clone https://github.com/<your-username>/heart-disease-prediction.git
+cd heart-disease-prediction
+pip install -r requirements.txt
+jupyter notebook
+
+📬 Contact
+Lyna Bouikni
+* Junior Data Scientist | AI & Neuroscience
+* lynabouiknia@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/lyna-b-231a41126/)
