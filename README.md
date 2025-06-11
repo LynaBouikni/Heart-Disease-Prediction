@@ -1,40 +1,38 @@
-# 🫀 Heart-Disease-Prediction
-
-
+# 🫀 Heart Disease Prediction with Explainable Machine Learning
 
 ##   Overview
 
-This project is an end-to-end machine learning pipeline designed to predict the presence of heart disease in patients based on clinical attributes. It's built for binary classification and implements essential data science workflows, from exploratory data analysis (EDA) to model tuning and evaluation.
+This project is an end-to-end machine learning pipeline for predicting the presence of heart disease based on clinical attributes. It explores a full data science workflow—from EDA and preprocessing to model building and SHAP-based interpretability.
 
-The dataset used comes from the **Cleveland Heart Disease dataset**, made accessible via [Kaggle](https://www.kaggle.com/datasets) and originally from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/).
+The dataset used is the **Cleveland Heart Disease dataset**, available on [Kaggle](https://www.kaggle.com/datasets) and originally sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/).
 
 ---
 
 ## 📌 Objectives
 
-- Understand the heart disease dataset through visual and statistical EDA.
-- Build and compare multiple classification models.
-- Optimize models using hyperparameter tuning.
-- Evaluate models using metrics beyond accuracy (precision, recall, F1, AUC).
-- Interpret model decisions through feature importance.
-- Apply reproducible and ethical data science practices.
+- Explore the dataset with statistical and visual EDA  
+- Build and evaluate multiple classification models  
+- Tune hyperparameters for optimal performance
+- Evaluate models using metrics beyond accuracy (precision, recall, F1, AUC...etc).
+- Use SHAP values for feature importance and prediction explanations  
+- Generate patient-level explanations for model decisions  
+- Reflect on clinical alignment and model trustworthiness  
 
 ---
 
 ##  📁 Project Structure
 
 heart-disease-prediction/
-├── data/ # Dataset (link to Kaggle API)
-├── notebook.ipynb # Full end-to-end Jupyter notebook
-├── images/ # Visuals used in README
+├── data/ # Dataset via Kaggle API
+├── Heart_Disease_Prediction_with_Model_Explainability.ipynb # Full end-to-end Jupyter notebook
+├── images/ # SHAP plots and visualizations
 ├── requirements.txt # Python dependencies
-└── README.md # Project documentation (this file)
+└── README.md # Project documentation
 
 ---
 
-## 🧬 Dataset
-
-The dataset includes 303 samples and 14 features:
+## 📊 Dataset Features
+The dataset contains 303 patient records with 14 attributes:
 
 | Feature     | Description                                              |
 |-------------|----------------------------------------------------------|
@@ -49,54 +47,69 @@ The dataset includes 303 samples and 14 features:
 | `exang`     | Exercise-induced angina                                  |
 | `oldpeak`   | ST depression induced by exercise                        |
 | `slope`     | Slope of the ST segment                                  |
-| `ca`        | Number of major vessels (0–3) colored by fluoroscopy     |
-| `thal`      | Thalium stress result (normal/fixed/reversible defect)   |
+| `ca`        | Number of major vessels (0–3) seen via fluoroscopy       |
+| `thal`      | Thalium stress result (1, 3, 6, 7)                        |
 | `target`    | Heart disease present (1) or not (0)                     |
 
 ---
 
-## 🔁 ML Workflow
+## 🔁 Workflow Summary
 
-| Step | Description |
-|------|-------------|
-| 1️⃣ Problem Definition       | Predict presence of heart disease (binary classification) |
-| 2️⃣ Data Exploration (EDA)  | Understand the data structure and relationships            |
-| 3️⃣ Model Building          | Logistic Regression, KNN, Random Forest                    |
-| 4️⃣ Model Evaluation        | Confusion Matrix, ROC AUC, Precision, Recall, F1           |
-| 5️⃣ Hyperparameter Tuning   | RandomizedSearchCV, GridSearchCV                           |
-| 6️⃣ Insights & Reporting    | Feature importance, cross-validated metrics                |
-
----
-
-## ⚙️ Tech Stack
-
-- Python 3.11+
-- pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-Learn
-- Jupyter Notebook
+| Step | Task |
+|------|------|
+| 1️⃣ | Define the problem (binary classification) |
+| 2️⃣ | Perform EDA and check class balance |
+| 3️⃣ | Preprocess the data (scaling, encoding) |
+| 4️⃣ | Train multiple models (LogReg, KNN, RF) |
+| 5️⃣ | Evaluate with metrics (F1, AUC, confusion matrix) |
+| 6️⃣ | Optimize via GridSearchCV / RandomizedSearchCV |
+| 7️⃣ | Interpret results using SHAP (global + local) |
 
 ---
 
-## 📊 Results
-
-- **Best model**: Logistic Regression (tuned)
-- **Accuracy**: ~85% (cross-validated)
-- **Precision**: ~82%
-- **Recall**: ~93%
-- **F1-score**: ~87%
-- **ROC AUC**: > 0.90
+## ⚙️ Tools & Libraries
+- Python 3.11+  
+- pandas, NumPy  
+- Scikit-Learn  
+- Matplotlib, Seaborn  
+- SHAP  
+- Jupyter Notebook  
 
 ---
 
-## 📁 How to Run
+## ✅ Results
+- **Best model**: Logistic Regression (with hyperparameter tuning)  
+- **Cross-validated Accuracy**: ~85%  
+- **Precision**: ~82%  
+- **Recall**: ~93%  
+- **F1 Score**: ~87%  
+- **ROC AUC**: > 0.90  
 
+---
+
+## 📈 Explainability with SHAP
+- Global feature importance via beeswarm and bar plots  
+- Local explanations for high-risk and low-risk patients  
+- Clinical reflection on model behavior (e.g., counterintuitive treatment of `thalach` and `oldpeak`)  
+- Waterfall plots to show feature contributions for individual predictions  
+
+---
+
+## 🧠 Clinical Takeaways
+- The model aligns with known risk factors like `ca`, `thal`, and `cp`  
+- Some features (e.g., `thalach`) reveal unexpected effects, possibly due to feature interactions  
+- SHAP visualizations make it easier to debug, improve, and trust the model  
+- Emphasizes the need for caution when using ML in clinical settings  
+
+---
+
+## ▶️ How to Run
 ```bash
-git clone https://github.com/<your-username>/heart-disease-prediction.git
-cd heart-disease-prediction
+git clone https://github.com/LynaBouikni/Heart-Disease-Prediction.git
+cd Heart-Disease-Prediction
 pip install -r requirements.txt
 jupyter notebook
-```
+
 
 ## 🤝 Acknowledgements
 UCI Machine Learning Repository – Heart Disease Dataset
