@@ -24,11 +24,14 @@ The dataset used is the **Cleveland Heart Disease dataset**, available on [Kaggl
 
 Heart-Disease-Prediction/
 
-├── data/            ← CSV 
-├── images/          ← Visuals (SHAP, EDA plots, Model Comparisons)
-├── notebook/        ← Jupyter Notebooks
+```
+Heart-Disease-Prediction/
+├── data/           # CSV files (raw or processed)
+├── images/         # Visuals (SHAP, EDA plots, model comparisons)
+├── notebook/       # Jupyter Notebooks
 ├── requirements.txt
-├── README.md
+└── README.md
+```
 
 
 ---
