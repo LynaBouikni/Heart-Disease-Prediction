@@ -122,6 +122,6 @@ Zero to Mastery – Machine Learning Course by Daniel Bourke
 
 ## 📬 Contact
 Lyna Bouikni
-* Junior Data Scientist | AI & Neuroscience
+* Junior Data Scientist | AI & Computational Modeling
 * lynabouiknia@gmail.com
 🔗 [LinkedIn](https://www.linkedin.com/in/lyna-b-231a41126/)
