@@ -22,16 +22,14 @@ The dataset used is the **Cleveland Heart Disease dataset**, available on [Kaggl
 
 ##  📁 Project Structure
 
-heart-disease-prediction/
-├── data/ # Dataset via Kaggle API
+Heart-Disease-Prediction/
 
-├── Heart_Disease_Prediction_with_Model_Explainability.ipynb # Full end-to-end Jupyter notebook
+├── data/            ← CSV 
+├── images/          ← Visuals (SHAP, EDA plots, Model Comparisons)
+├── notebook/        ← Jupyter Notebooks
+├── requirements.txt
+├── README.md
 
-├── images/ # SHAP plots and visualizations
-
-├── requirements.txt # Python dependencies
-
-└── README.md # Project documentation
 
 ---
 
