@@ -109,7 +109,7 @@ git clone https://github.com/LynaBouikni/Heart-Disease-Prediction.git
 cd Heart-Disease-Prediction
 pip install -r requirements.txt
 jupyter notebook
-
+```
 
 ## 🤝 Acknowledgements
 UCI Machine Learning Repository – Heart Disease Dataset
