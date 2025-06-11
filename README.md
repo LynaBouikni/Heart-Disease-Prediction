@@ -1,5 +1,12 @@
 # 🫀 Heart Disease Prediction with Explainable Machine Learning
 
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2.2-orange?logo=scikitlearn)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Made With Jupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?logo=jupyter)
+![Status](https://img.shields.io/badge/status-Complete-brightgreen)
+
+
 ##   Overview
 
 This project is an end-to-end machine learning pipeline for predicting the presence of heart disease based on clinical attributes. It explores a full data science workflow—from EDA and preprocessing to model building and SHAP-based interpretability.
