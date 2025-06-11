@@ -26,9 +26,9 @@ Heart-Disease-Prediction/
 
 ```
 Heart-Disease-Prediction/
-├── data/           # CSV files (raw or processed)
+├── data/           # CSV file
 ├── images/         # Visuals (SHAP, EDA plots, model comparisons)
-├── notebook/       # Jupyter Notebooks
+├── notebook/       # Jupyter Notebook
 ├── requirements.txt
 └── README.md
 ```
